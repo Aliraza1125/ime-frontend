@@ -36,12 +36,12 @@ export const GeneralLayout = ({ children }) => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className="w-full h-full py-16 bg-theme-gradient">
-                <div className="w-full min-h-screen h-full bg-white rounded-s-[100px] rounded-e-[100px] ">
+                <div className="w-full min-h-screen h-full bg-white rounded-[60px] sm:rounded-[60px] md:rounded-[60px] lg:rounded-[75px] xl:rounded-[100px]">
                     <Header />
                     {children}
                     <Footer />
                 </div>
-                <div className=" absolute flex justify-center items-center text-center w-full py-5">
+                <div className="  flex justify-center items-center text-center w-full py-5">
                     <p className="text-center text-base font-normal text-white ">© Copyright by iMe 2024 – All right reserved.</p>
                 </div>
             </div>

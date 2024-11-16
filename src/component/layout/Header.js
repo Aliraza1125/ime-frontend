@@ -9,8 +9,8 @@ import { setEnquiryModal } from '@/redux/appSlice';
 
 const Header = () => {
     const dispatch = useDispatch();
-
     const router = useRouter();
+    
     const options = [
         {
             id: 1,
@@ -25,46 +25,59 @@ const Header = () => {
             action: () => router.push('/solution/employee'),
         },
     ];
+
     return (
         <div className="w-full h-[5.75rem] py-4 flex flex-col items-center border-b border-[rgba(0,0,0,0.2)]">
-            <div className="w-full max-w-[1920px] mx-auto px-8 lg:px-24 h-full flex justify-between ">
-                <Link href="/" className="w-1/12 flex items-center">
-                    <Image src="/Images/Logo.svg" alt="GFG logo imported from public directory" width={0} height={0} sizes="100%" className="w-[8.5rem] h-[3.25rem]" />
+            <div className="w-full max-w-[1920px] mx-auto px-8 md:px-12 lg:px-24 h-full flex justify-between items-center">
+                <Link href="/" className="flex items-center">
+                    <Image
+                        src="/Images/Logo.svg"
+                        alt="Logo"
+                        width={0}
+                        height={0}
+                        sizes="100%"
+                        className="w-32 h-14 md:w-[8.5rem] md:h-[3.25rem]"
+                    />
                 </Link>
 
-                <div className="w-4/12 flex  justify-start items-center gap-14 font-notoSans">
+                {/* Navigation Items - Hidden on mobile */}
+                <div className="hidden md:flex w-auto lg:w-6/12 justify-start items-center gap-4 lg:gap-14 font-notoSans">
                     <DropDown
-                        button={<span className="text-black font-semibold text-[18px] leading-[20px] cursor-pointer uppercase font-notoSans">Solution</span>}
+                        button={
+                            <span className="text-black font-semibold text-base lg:text-lg leading-5 cursor-pointer uppercase font-notoSans">
+                                Solution
+                            </span>
+                        }
                         options={options}
                         direction="top-8 right-0 origin-top-right"
                     />
-                    {/* <Link
-            href=''
-            className='text-black font-semibold text-lg cursor-pointer uppercase'>
-            Solution
-          </Link> */}
-                    {/* <Link
-            href=''
-            className='text-black font-semibold text-lg cursor-pointer uppercase'>
-            About us
-          </Link>
-          <Link
-            href=''
-            className='text-black font-semibold text-lg cursor-pointer uppercase'>
-            Blog
-          </Link>
-          <Link
-            href=''
-            className='text-black font-semibold text-lg cursor-pointer uppercase'>
-            Pricing
-          </Link> */}
+                    <Link
+                        href=""
+                        className="text-black font-semibold text-base lg:text-lg cursor-pointer uppercase"
+                    >
+                        About us
+                    </Link>
+                    <Link
+                        href=""
+                        className="text-black font-semibold text-base lg:text-lg cursor-pointer uppercase"
+                    >
+                        Blog
+                    </Link>
+                    <Link
+                        href=""
+                        className="text-black font-semibold text-base lg:text-lg cursor-pointer uppercase"
+                    >
+                        Pricing
+                    </Link>
                 </div>
-                <div className="flex justify-center items-center gap-4">
+
+                {/* Enquire Now Button - Responsive sizing */}
+                <div className="flex justify-center items-center">
                     <button
                         onClick={() => dispatch(setEnquiryModal(true))}
-                        className="font-notoSans font-semibold uppercase w-[11.25rem] h-12 text-base flex gap-2 justify-center items-center rounded-xl text-white bg-theme-gradient"
+                        className="font-notoSans font-semibold uppercase w-44 md:w-44 h-12 md:h-12 text-base md:text-base flex gap-2 md:gap-2 justify-center items-center rounded-xl text-white bg-theme-gradient"
                     >
-                        Enquire Now <GoArrowRight className="w-6 h-8" />
+                        Enquire Now <GoArrowRight className="w-6 h-8 md:w-6 md:h-8" />
                     </button>
                 </div>
             </div>
