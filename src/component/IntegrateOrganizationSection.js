@@ -17,9 +17,10 @@ const IntegrateOrganizationSection = () => {
                             <p className="mt-1">your organization</p>
                         </h1>
                         <p className="text-sm md:text-[16px] font-normal leading-relaxed md:leading-[24px] text-white/90 text-center md:text-start">
-                            Equip your team with iMe's AI powered well-being platform to gain instant and proactive insights that enhance well-being. With the right well-being
+                            Equip your team with iMe&apos;s AI powered well-being platform to gain instant and proactive insights that enhance well-being. With the right well-being
                             platform, create a workplace where productivity thrives and your team is empowered to grow both professionally and personally.
                         </p>
+
                         <button
                             onClick={() => dispatch(setEnquiryModal(true))}
                             className="font-notoSans w-40 md:w-48 h-12
