@@ -149,7 +149,7 @@ const MobileNavButton = () => {
                             </div>
                         </div>
 
-                        {/* Other Navigation Links */}
+                        {/* Other Navigation Links
                         {navLinks.map((link, index) => (
                             <Link
                                 key={index}
@@ -159,7 +159,7 @@ const MobileNavButton = () => {
                             >
                                 {link.label}
                             </Link>
-                        ))}
+                        ))} */}
                     </nav>
                 </div>
             </div>

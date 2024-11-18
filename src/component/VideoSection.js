@@ -25,7 +25,7 @@ const VideoSection = () => {
                                 onClick={handlePlayVideo}
                             />
                             {/* Optional Play Button Overlay */}
-                            {/* <div 
+                            <div 
                                 className="absolute inset-0 flex items-center justify-center cursor-pointer"
                                 onClick={handlePlayVideo}
                             >
@@ -33,7 +33,7 @@ const VideoSection = () => {
                                     <div className="w-0 h-0 border-t-[10px] sm:border-t-[12px] border-t-transparent border-b-[10px] sm:border-b-[12px] border-b-transparent border-l-[20px] sm:border-l-[24px] border-[#BC1F74] ml-1">
                                     </div>
                                 </div>
-                            </div> */}
+                            </div>
                         </div>
                     )}
 
