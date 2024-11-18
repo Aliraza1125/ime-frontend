@@ -41,7 +41,7 @@ export const GeneralLayout = ({ children }) => {
                     {children}
                     <Footer />
                 </div>
-                <div className="  flex justify-center items-center text-center w-full py-5">
+                <div className=" absolute flex justify-center items-center text-center w-full py-5">
                     <p className="text-center text-base font-normal text-white ">© Copyright by iMe 2024 – All right reserved.</p>
                 </div>
             </div>

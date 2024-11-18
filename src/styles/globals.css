@@ -16,3 +16,6 @@ h5,
 h6 {
   @apply font-clashdisplay;
 }
+/* * {
+  @apply border-[2px] border-black;
+} */
