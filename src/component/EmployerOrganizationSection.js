@@ -15,7 +15,7 @@ const EmployerOrganizationSection = () => {
                         Need more info?
                     </h1>
                     <p className="text-base sm:text-lg lg:text-[16px] text-center md:text-start font-normal leading-relaxed lg:leading-[24px] text-white/90 mb-4">
-                        Not sure which plan is right for you? Contact our sales team to discuss your organization's specific needs and we'll help you choose the perfect solution.
+                        Not sure which plan is right for you? Contact our sales team to discuss your organization&apos;s specific needs and we&apos;ll help you choose the perfect solution.
                     </p>
                     <button
                         onClick={() => dispatch(setEnquiryModal(true))}
