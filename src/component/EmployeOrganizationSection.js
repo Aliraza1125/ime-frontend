@@ -23,7 +23,7 @@ const EmployeOrganizationSection = () => {
                         flex gap-2 justify-center items-center rounded-xl
                         text-white bg-transparent border border-white
                         hover:bg-white/10 transition-colors duration-300
-                        text-base lg:text-[16px] font-semibold lg:leading-[21.79px]"
+                       text-base lg:text-[16px] font-semibold lg:leading-[21.79px]&quot;"
                     >
                         Enquire Now <GoArrowRight className="w-6 h-8" />
                     </button>
