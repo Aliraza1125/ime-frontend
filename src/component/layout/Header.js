@@ -29,16 +29,22 @@ const Header = () => {
     return (
         <div className="w-full h-[5.75rem] py-4 flex flex-col items-center border-b border-[rgba(0,0,0,0.2)]">
             <div className="w-full max-w-[1920px] mx-auto px-8 md:px-12 lg:px-24 h-full flex justify-between items-center">
-                <Link href="/" className="flex items-center">
-                    <Image
-                        src="/Images/Logo.svg"
-                        alt="Logo"
-                        width={0}
-                        height={0}
-                        sizes="100%"
-                        className="w-32 h-14 md:w-[8.5rem] md:h-[3.25rem]"
-                    />
-                </Link>
+            <Link href="/" className="flex items-center">
+    <Image
+        src="/Images/Logo.svg"
+        alt="Logo"
+        width={0}
+        height={0}
+        sizes="(max-width: 640px) 120px,
+               (max-width: 768px) 128px,
+               136px"
+        className="w-[7.5rem] h-[2.75rem] 
+                   sm:w-[8rem] sm:h-[3rem]
+                   md:w-[8.5rem] md:h-[3.25rem]
+                   lg:w-[9rem] lg:h-[3.5rem]
+                   object-contain"
+    />
+</Link>
 
                 {/* Navigation Items - Hidden on mobile */}
                 <div className="hidden md:flex w-auto lg:w-6/12 justify-start items-center gap-4 lg:gap-14 font-notoSans">
@@ -72,14 +78,23 @@ const Header = () => {
                 </div>
 
                 {/* Enquire Now Button - Responsive sizing */}
-                <div className="flex justify-center items-center">
-                    <button
-                        onClick={() => dispatch(setEnquiryModal(true))}
-                        className="font-notoSans font-semibold uppercase w-44 md:w-44 h-12 md:h-12 text-base md:text-base flex gap-2 md:gap-2 justify-center items-center rounded-xl text-white bg-theme-gradient"
-                    >
-                        Enquire Now <GoArrowRight className="w-6 h-8 md:w-6 md:h-8" />
-                    </button>
-                </div>
+               {/* Enquire Now Button Container */}
+<div className="flex justify-center items-center">
+    <button
+        onClick={() => dispatch(setEnquiryModal(true))}
+        className="font-notoSans font-semibold uppercase 
+                   w-32 sm:w-40 md:w-40 lg:w-44 
+                   h-10 sm:h-11 md:h-12 
+                   text-[12px] sm:text-base 
+                   flex gap-1 sm:gap-1.5 md:gap-2 
+                   justify-center items-center 
+                   rounded-lg sm:rounded-xl 
+                   text-white bg-theme-gradient"
+    >
+        Enquire Now 
+        <GoArrowRight className="w-4 h-4 sm:w-6 sm:h-6 md:w-6 md:h-8" />
+    </button>
+</div>
             </div>
         </div>
     );
