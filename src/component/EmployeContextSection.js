@@ -10,7 +10,7 @@ const EmployeContextSection = () => {
                     <h1 className="text-3xl sm:text-4xl lg:text-[48px] font-semibold leading-tight sm:leading-snug lg:leading-[50px] ">
                         Context-aware <br className="" /> AI Coach
                     </h1>
-                    
+
                     <p className="font-medium text-base sm:text-lg lg:text-xl leading-relaxed lg:leading-[33px] w-full lg:w-5/6 font-satoshi opacity-50 ">
                         iMe&apos;s AI coach is a context-aware, providing personalized well-being solution that reflects real-time data such as workload, schedule, and personal
                         preferences. Our personalized approach guarantees that well-being support is timely, pertinent, and tailored to each employee&apos;s specific circumstances,

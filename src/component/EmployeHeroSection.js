@@ -25,27 +25,27 @@ const EmployeHeroSection = () => {
                 <div className="flex flex-col gap-4">
                     <h1 className="flex flex-col font-clash-display font-semibold text-4xl sm:text-5xl lg:text-[80px] leading-tight sm:leading-snug lg:leading-[85px] text-center lg:text-left">
                         Improving <span className='text-5xl'>
-                             Employee
-                            </span>
+                            Employee
+                        </span>
                         <span className="bg-text-gradient bg-clip-text text-transparent"> Well-being</span>
                     </h1>
 
                     <p className="font-normal text-base sm:text-lg leading-relaxed lg:leading-[28px] mb-3 text-center lg:text-left">
-                        iMe's platform integrates seamlessly into daily work routines, delivering real-time well-being insights and personalized activities that foster healthy
+                        iMe&apos;s platform integrates seamlessly into daily work routines, delivering real-time well-being insights and personalized activities that foster healthy
                         habits, reduce stress, and enhance productivity. By cultivating a well-being-focused workplace, iMe supports individual well-being while helping
                         organizations meet their sustainability goals.
                     </p>
 
-                    <form onSubmit={handleSubmit(onSubmit)} 
-                          className="w-full max-w-[27rem] mx-auto lg:mx-0 p-2.5 pl-4 sm:pl-6 
+                    <form onSubmit={handleSubmit(onSubmit)}
+                        className="w-full max-w-[27rem] mx-auto lg:mx-0 p-2.5 pl-4 sm:pl-6 
                                    flex flex-row sm:flex-row gap-3 sm:gap-0 
                                    border border-[#E1E1E1] justify-between items-center 
                                    rounded-[1.25rem]">
-                        <input 
-                            {...register('email', { required: true })} 
-                            type="text" 
-                            placeholder="Enter Your Email ..." 
-                            className="outline-none w-full sm:w-auto text-start sm:text-left" 
+                        <input
+                            {...register('email', { required: true })}
+                            type="text"
+                            placeholder="Enter Your Email ..."
+                            className="outline-none w-full sm:w-auto text-start sm:text-left"
                         />
                         <button className="font-notoSans font-semibold w-full sm:w-[11.25rem] h-12 
                                          text-base flex gap-2 justify-center items-center 
