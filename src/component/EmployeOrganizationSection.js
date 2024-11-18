@@ -11,7 +11,7 @@ const EmployeOrganizationSection = () => {
             <div className="w-full sm:w-[95%] lg:w-3/4 h-[50rem] md:h-[27rem] rounded-xl lg:rounded-[2.5rem] flex flex-col lg:flex-row gap-8 bg-theme-gradient overflow-visible">
                 <div className="w-full lg:w-6/12 flex flex-col items-center lg:items-start p-6 sm:p-8 lg:p-10 gap-6 sm:gap-6 relative bg-[url('/Images/map-bg.png')] bg-cover bg-no-repeat">
                     <h1 className="text-4xl sm:text-4xl lg:text-[37px] font-semibold leading-tight sm:leading-snug lg:leading-[45.8px] text-white text-center md:text-start">
-                        Bring our <br className="block md:hidden" />  platform to <br className="hidden sm:block" /> your  organization
+                        Bring our <br className="block md:hidden" />  platform to <br className="hidden sm:block" /> your&apos; organization
                     </h1>
                     <p className="text-base sm:text-lg lg:text-[20px] font-normal leading-relaxed lg:leading-[24px] text-white/90 text-center md:text-start">
                         Empower your workforce with AI-driven well-being management and work-life harmony solution. From real-time insights to proactive well-being support,
@@ -23,12 +23,12 @@ const EmployeOrganizationSection = () => {
                         flex gap-2 justify-center items-center rounded-xl
                         text-white bg-transparent border border-white
                         hover:bg-white/10 transition-colors duration-300
-                       text-base lg:text-[16px] font-semibold lg:leading-[21.79px]&quot;"
+                       text-base lg:text-[16px] font-semibold lg:leading-[21.79px]"
                     >
                         Enquire Now <GoArrowRight className="w-6 h-8" />
                     </button>
                 </div>
-                
+
                 <div className="w-full lg:w-6/12 flex justify-center lg:justify-end relative">
                     <Image
                         src="/Images/OrganizationCvrImg.svg"
