@@ -17,6 +17,7 @@ const MobileNavButton = () => {
             action: () => {
                 router.push('/solution/employer');
                 setIsOpen(false);
+                setShowSolutionSubmenu(false)
             },
         },
         {
@@ -26,6 +27,8 @@ const MobileNavButton = () => {
             action: () => {
                 router.push('/solution/employee');
                 setIsOpen(false);
+                setShowSolutionSubmenu(false)
+
             },
         },
     ];
@@ -44,7 +47,7 @@ const MobileNavButton = () => {
             {/* Navigation Trigger Button */}
             <button
                 onClick={() => setIsOpen(true)}
-                className="md:hidden fixed left-0 top-[28vh] z-50 flex items-center"
+                className="md:hidden fixed left-0 top-[32vh] z-50 flex items-center"
                 aria-label="Open navigation menu"
             >
                 <div className="relative">
@@ -84,7 +87,10 @@ const MobileNavButton = () => {
                     {/* Close Button */}
                     <div className="flex justify-end p-6 border-b border-gray-100">
                         <button
-                            onClick={() => setIsOpen(false)}
+                           onClick={() => {
+                            setIsOpen(false);
+                            setShowSolutionSubmenu(false);
+                        }}
                             className="p-2"
                             aria-label="Close navigation menu"
                         >
