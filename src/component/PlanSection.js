@@ -55,7 +55,7 @@ const PlanSection = () => {
 
                         <div className="flex flex-col mt-4">
                             <PlanFeature icon="/Images/standarPlanTick.svg" text="200-10,000 Employees" />
-                            <PlanFeature icon="/Images/standarPlanTick.svg" text="£10,000 Integration Free" />
+                            <PlanFeature icon="/Images/standarPlanTick.svg" text="£10,000 Integration Fee" />
                             <PlanFeature icon="/Images/standarPlanTick.svg" text="£4.99 /employee/month" isPrice={true} priceColor="text-[#B0208C]" />
                         </div>
 
@@ -74,7 +74,7 @@ const PlanSection = () => {
                     </div>
 
                     {/* Limited Time Offer */}
-                    <div className="relative bg-theme-gradient w-full max-w-[324px] rounded-2xl p-4 sm:p-6 flex flex-col">
+                    {/* <div className="relative bg-theme-gradient w-full max-w-[324px] rounded-2xl p-4 sm:p-6 flex flex-col">
                         <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-white border border-[#1E1E1E]/20 rounded-lg py-2 px-4 sm:px-6">
                             <h2 className="text-xl sm:text-2xl lg:text-[30px] font-semibold leading-tight text-center bg-theme-gradient bg-clip-text text-transparent w-[195px]">
                                 Limited Time Offer
@@ -110,7 +110,7 @@ const PlanSection = () => {
                         >
                             ENQUIRE NOW <GoArrowRight className="w-5 h-5" />
                         </button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
