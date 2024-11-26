@@ -54,18 +54,18 @@ const FeaturesSection = () => {
                     </div>
                     {/* Image Container with increased mobile size */}
                     {/* Image Section */}
-    <div className="w-full lg:w-8/12 relative px-4 lg:px-0">
-        <div className="w-full max-w-full overflow-hidden">
-            <Image
-                src="/Images/employerFeature.svg"
-                alt="employerFeature"
-                width={1000}
-                height={800}
-                className="w-full h-auto object-contain scale-100 md:scale-105 hover:scale-105 transition-transform duration-300"
-                priority
-            />
-        </div>
-    </div>
+                    <div className="w-full lg:w-8/12 relative px-4 lg:px-0">
+                        <div className="w-full max-w-full overflow-hidden">
+                            <Image
+                                src="/Images/employerFeature.svg"
+                                alt="employerFeature"
+                                width={1000}
+                                height={800}
+                                className="w-full h-auto object-contain scale-100 md:scale-105 hover:scale-105 transition-transform duration-300"
+                                priority
+                            />
+                        </div>
+                    </div>
                 </div>
 
                 {/* Employees Section */}

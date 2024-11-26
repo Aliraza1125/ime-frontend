@@ -7,16 +7,18 @@ import { useDispatch } from 'react-redux';
 const PlanSection = () => {
     const dispatch = useDispatch();
 
-    const PlanFeature = ({ icon, text, textColor = 'text-[#717171]', isPrice, priceColor }) => (
+    const PlanFeature = ({ icon, text, textColor = 'text-[#717171]', isPrice, priceColor, isBold, isLarge, isSpecialFormat }) => (
         <div className="flex items-center gap-x-3 mt-3">
             <Image src={icon} alt="feature tick" width={20} height={20} />
-            <p className={`${textColor} text-sm sm:text-base lg:text-lg`}>
+            <p className={`${textColor} ${isLarge ? 'text-base sm:text-lg lg:text-xl' : 'text-sm sm:text-base lg:text-lg'}`}>
                 {isPrice ? (
                     <>
-                        <span className={`${priceColor} font-semibold`}>{text.split(' ')[0]}</span> {text.split(' ').slice(1).join(' ')}
+                        <span className={`${priceColor} ${isBold ? 'font-semibold' : 'font-normal'}`}>{text.split(' ')[0]}</span> {text.split(' ').slice(1).join(' ')}
                     </>
+                ) : isSpecialFormat ? (
+                    <span dangerouslySetInnerHTML={{ __html: text }} />
                 ) : (
-                    text
+                    <span className={`${isBold ? 'font-bold text-lg sm:text-xl lg:text-2l' : ''}`}>{text}</span>
                 )}
             </p>
         </div>
@@ -27,10 +29,7 @@ const PlanSection = () => {
             <div className="w-full mx-auto">
                 {/* Header Section */}
                 <h1 className="flex flex-col md:flex-row md:gap-2 md:justify-center text-center font-semibold text-4xl sm:text-4xl lg:text-[48px] leading-tight lg:leading-[59.04px] text-[#0D0C46]">
-                    Unlock the Full <span>
-                         Potential of iMe
-                        
-                        </span>
+                    Unlock the Full <span>Potential of iMe</span>
                 </h1>
                 <p className="text-center font-normal text-base sm:text-lg lg:text-[20px] leading-relaxed lg:leading-[30px] font-lato mt-3 lg:mt-4 max-w-[76rem] mx-auto px-4">
                     Take the next step in corporate well-being by unlocking all of iMe&apos;s powerful features! Explore the realm of tailored support, insights, and result driven
@@ -56,7 +55,7 @@ const PlanSection = () => {
                         <div className="flex flex-col mt-4">
                             <PlanFeature icon="/Images/standarPlanTick.svg" text="200-10,000 Employees" />
                             <PlanFeature icon="/Images/standarPlanTick.svg" text="£10,000 Integration Fee" />
-                            <PlanFeature icon="/Images/standarPlanTick.svg" text="£4.99 /employee/month" isPrice={true} priceColor="text-[#B0208C]" />
+                            <PlanFeature icon="/Images/standarPlanTick.svg" text="£4.99 /employee/month" isPrice={true} priceColor="text-[#B0208C]" isBold={true} />
                         </div>
 
                         <button
@@ -67,14 +66,14 @@ const PlanSection = () => {
                         </button>
 
                         <div className="relative flex justify-center -bottom-2">
-                            <p className="bg-[#F1F1F1] text-xs sm:text-[15px] border border-[#1E1E1E]/20 rounded-[20px] w-[100%] sm:w-[355px] py-2 px-1 text-center">
+                            <p className="bg-[#F1F1F1] text-xs sm:text-[15px] border border-[#1E1E1E]/20 rounded-[10px] w-[100%] sm:w-[355px] py-2 px-1 text-center cursor-pointer hover:bg-[#ddd4d4]">
                                 Additional customizations available.
                             </p>
                         </div>
                     </div>
 
                     {/* Limited Time Offer */}
-                    {/* <div className="relative bg-theme-gradient w-full max-w-[324px] rounded-2xl p-4 sm:p-6 flex flex-col">
+                    <div className="relative bg-theme-gradient w-full max-w-[324px] rounded-2xl p-4 sm:p-6 flex flex-col">
                         <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-white border border-[#1E1E1E]/20 rounded-lg py-2 px-4 sm:px-6">
                             <h2 className="text-xl sm:text-2xl lg:text-[30px] font-semibold leading-tight text-center bg-theme-gradient bg-clip-text text-transparent w-[195px]">
                                 Limited Time Offer
@@ -92,15 +91,32 @@ const PlanSection = () => {
                         </div>
 
                         <div className="bg-white/20 p-4 rounded-xl mt-6">
-                            <PlanFeature icon="/Images/limitedPlanTick.svg" text="50% off on subscription" textColor="text-white" />
-                            <PlanFeature icon="/Images/limitedPlanTick.svg" text="£2.49 /employee/month" textColor="text-white" isPrice={true} priceColor="text-white" />
-                            <PlanFeature icon="/Images/limitedPlanTick.svg" text="Free Integration Fee" textColor="text-white" />
+                            <PlanFeature 
+                                icon="/Images/limitedPlanTick.svg" 
+                                text="50% off on subscription" 
+                                textColor="text-white" 
+                                isBold={true} 
+                                isLarge={true}
+                            />
+                            <PlanFeature 
+                                icon="/Images/limitedPlanTick.svg" 
+                                text="£2.49 /employee/month" 
+                                textColor="text-white" 
+                                isPrice={true} 
+                                priceColor="text-white" 
+                                isBold={false}
+                            />
+                            <PlanFeature 
+                                icon="/Images/limitedPlanTick.svg" 
+                                text='<span class="font-bold">Free</span> Integration' 
+                                textColor="text-white"
+                                isSpecialFormat={true}
+                            />
                             <PlanFeature
                                 icon="/Images/limitedPlanTick.svg"
-                                text="25% off on additional Customization"
+                                text='<span class="font-bold">25% off</span> on additional Customization'
                                 textColor="text-white"
-                                isPrice={true}
-                                priceColor="text-white"
+                                isSpecialFormat={true}
                             />
                         </div>
 
@@ -110,7 +126,7 @@ const PlanSection = () => {
                         >
                             ENQUIRE NOW <GoArrowRight className="w-5 h-5" />
                         </button>
-                    </div> */}
+                    </div>
                 </div>
             </div>
         </div>

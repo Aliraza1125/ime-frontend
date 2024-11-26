@@ -20,14 +20,15 @@ const EmployeHeroSection = () => {
     };
 
     return (
-        <div className="w-full px-4 sm:px-8 md:px-16 lg:px-24 h-auto flex flex-col lg:flex-row justify-between py-2 ">
+        <div className="w-full px-4 sm:px-8 md:px-16 lg:px-24 h-auto flex flex-col lg:flex-row justify-between py-2">
             <div className="w-full lg:w-6/12 h-auto flex justify-start lg:justify-end gap-6 pt-6 lg:pt-24">
                 <div className="flex flex-col gap-4">
-                    <h1 className="flex flex-col font-clash-display font-semibold text-4xl sm:text-5xl lg:text-[80px] leading-tight sm:leading-snug lg:leading-[85px] text-center lg:text-left">
-                        Improving <span className='text-5xl'>
-                            Employee
-                        </span>
-                        <span className="bg-text-gradient bg-clip-text text-transparent"> Well-being</span>
+                    <h1 className="flex flex-col font-clash-display font-semibold text-4xl sm:text-5xl lg:text-[60px] leading-tight sm:leading-snug lg:leading-[85px] text-center lg:text-left">
+                        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-3">
+                            <span>Improving</span>
+                            <span className="">Employee</span>
+                        </div>
+                        <span className="bg-text-gradient bg-clip-text text-transparent">Well-being</span>
                     </h1>
 
                     <p className="font-normal text-base sm:text-lg leading-relaxed lg:leading-[28px] mb-3 text-center lg:text-left">
