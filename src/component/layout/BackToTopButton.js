@@ -41,7 +41,7 @@ const BackToTopButton = () => {
                         onClick={scrollToTop}
                         className="w-12 h-12 
                                  rounded-full 
-                                  border-4 border-[#000081]
+                                  border-2 border-[#000081]
                                  shadow-lg 
                                  
                                  flex items-center justify-center 
