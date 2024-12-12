@@ -73,7 +73,7 @@ const BackToTopButton = () => {
             >
                 <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
                     <Image 
-                        src="/images/uparrow.svg" 
+                        src={'/images/uparrow.png'} 
                         alt="Arrow Up"
                         width={24}
                         height={24}
