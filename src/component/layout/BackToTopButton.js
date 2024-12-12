@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 
 const BackToTopButton = () => {
     const [buttonStyle, setButtonStyle] = useState({});
@@ -71,10 +72,12 @@ const BackToTopButton = () => {
                 aria-label="Back to top"
             >
                 <div className="w-full h-full rounded-full bg-white flex items-center justify-center">
-                    <img 
+                    <Image 
                         src="/images/uparrow.png" 
                         alt="Arrow Up"
-                        className="w-5 h-5" 
+                        width={24}
+                        height={24}
+                        priority
                     />
                 </div>
             </button>
