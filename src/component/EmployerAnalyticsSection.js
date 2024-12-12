@@ -28,17 +28,17 @@ const EmployerAnalyticsSection = () => {
                         Real-time Analytics /<br className="hidden sm:block" />
                         Preemptive Tool
                     </h1>
-                    <p className="font-medium text-base sm:text-lg lg:text-lg leading-relaxed lg:leading-[33px] w-full font-satoshi opacity-50">
+                    <p className="font-medium text-[15px] sm:text-lg lg:text-lg leading-[25px] lg:leading-[33px] w-full font-satoshi opacity-50 pr-8 sm:pr-0">
                         Real-time analytics cater to practical insights into possible causes of stress, allowing for early interventions that reduce burnout and promote a healthy
                         work environment. This method decreases turnover while simultaneously driving sustained productivity and stronger team involvement.
                     </p>
                     
                     {/* Mobile Read More Button */}
-                    <button
+                    {/* <button
                         className="md:hidden text-center font-notoSans font-semibold w-36 h-11 text-sm flex gap-2 justify-center items-center rounded-lg text-white bg-[#BC1F74] hover:bg-[#a41861] transition-colors"
                     >
                         Read More <GoArrowRight className="w-5 h-5" />
-                    </button>
+                    </button> */}
                 </div>
             </div>
         </div>

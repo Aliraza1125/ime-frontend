@@ -8,10 +8,10 @@ const EmployeOrganizationSection = () => {
     const dispatch = useDispatch();
     return (
         <div className="w-full h-auto flex justify-center pt-20 sm:pt-32 lg:pt-48 mb-30 sm:mb-32 lg:mb-60 px-4 sm:px-6">
-            <div className="w-full sm:w-[95%] lg:w-3/4 h-[45rem] md:h-[24rem] rounded-xl lg:rounded-[2.5rem] flex flex-col lg:flex-row gap-8 bg-theme-gradient overflow-visible">
+            <div className="w-full sm:w-[95%] lg:w-3/4 h-[45rem] md:h-[24rem] rounded-[40px] lg:rounded-[2.5rem] flex flex-col lg:flex-row gap-8 bg-theme-gradient overflow-visible">
                 <div className="w-full lg:w-6/12 flex flex-col items-center lg:items-start p-6 sm:p-8 lg:p-10 gap-6 sm:gap-6 relative bg-[url('/Images/map-bg.png')] bg-cover bg-no-repeat">
-                    <h1 className="text-4xl sm:text-4xl lg:text-[32px] font-semibold leading-tight sm:leading-snug lg:leading-[45.8px] text-white text-center md:text-start">
-                        Bring our <br className="block md:hidden" />  platform to <br className="hidden sm:block" /> your&apos; organization
+                    <h1 className="text-3xl sm:text-4xl lg:text-[32px] font-semibold leading-tight sm:leading-snug lg:leading-[45.8px] text-white text-center md:text-start">
+                        Bring our   platform to <br className="hidden sm:block" /> your organization
                     </h1>
                     <p className="text-base sm:text-lg lg:text-[18px] font-normal leading-relaxed lg:leading-[24px] text-white/90 text-center md:text-start">
                         Empower your workforce with AI-driven well-being management and work-life harmony solution. From real-time insights to proactive well-being support,
@@ -19,7 +19,7 @@ const EmployeOrganizationSection = () => {
                     </p>
                     <button
                         onClick={() => dispatch(setEnquiryModal(true))}
-                        className="font-notoSans w-48 sm:w-48 h-12
+                        className="font-notoSans w-56 sm:w-48 h-12
                         flex gap-2 justify-center items-center rounded-xl
                         text-white bg-transparent border border-white
                         hover:bg-white/10 transition-colors duration-300

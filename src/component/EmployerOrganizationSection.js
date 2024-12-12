@@ -8,19 +8,19 @@ const EmployerOrganizationSection = () => {
     const dispatch = useDispatch();
 
     return (
-        <div className="w-[100%] h-auto flex justify-center py-8 lg:py-16 px-4 lg:px-0">
-            <div className="w-full lg:w-3/4 h-[40rem] lg:h-[22rem] rounded-xl lg:rounded-[2rem] flex flex-col lg:flex-row lg:gap-8 bg-theme-gradient overflow-visible">
+        <div className="w-[100%] h-auto flex justify-center  lg:py-16 px-4 lg:px-0">
+            <div className="w-full lg:w-3/4 h-[40rem] lg:h-[22rem] rounded-[40px] lg:rounded-[40px] flex flex-col lg:flex-row lg:gap-8 bg-theme-gradient overflow-visible">
                 {/* Left Content */}
                 <div className="w-full lg:w-1/2 flex flex-col items-center md:items-start p-6 lg:p-12 gap-4 lg:gap-4 relative bg-[url('/Images/map-bg.png')] bg-cover bg-no-repeat">
                     <h1 className="text-3xl sm:text-4xl lg:text-[36px] font-semibold leading-tight lg:leading-[50px] text-white">
                         Need more info?
                     </h1>
-                    <p className="text-base sm:text-lg lg:text-[16px] text-center md:text-start font-normal leading-relaxed lg:leading-[24px] text-white/90 mb-2">
+                    <p className="text-base sm:text-lg lg:text-[16px] text-center md:text-start font-normal leading-relaxed lg:leading-[24px] text-white/90 mb-2 px-2 sm:px-0">
                         Not sure which plan is right for you? Contact our sales team to discuss your organization&apos;s specific needs and we&apos;ll help you choose the perfect solution.
                     </p>
                     <button
                         onClick={() => dispatch(setEnquiryModal(true))}
-                        className="font-notoSans w-44 h-11
+                        className="font-notoSans w-56 h-11
                         flex gap-2 justify-center items-center rounded-xl
                         text-white bg-transparent border border-white
                         hover:bg-white/10 transition-colors duration-300

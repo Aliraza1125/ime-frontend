@@ -23,23 +23,22 @@ const EmployeHeroSection = () => {
         <div className="w-full px-4 sm:px-8 md:px-16 lg:px-24 h-auto flex flex-col lg:flex-row justify-between py-2">
             <div className="w-full lg:w-6/12 h-auto flex justify-start lg:justify-end gap-6 pt-6 lg:pt-24">
                 <div className="flex flex-col gap-4">
-                    <h1 className="flex flex-col font-clash-display font-semibold text-4xl sm:text-5xl lg:text-[60px] leading-tight sm:leading-snug lg:leading-[85px] text-center lg:text-left">
-                        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-3">
-                            <span>Improving</span>
-                            <span className="">Employee</span>
-                        </div>
+                    <h1 className="flex flex-col font-clash-display font-semibold text-3xl sm:text-5xl lg:text-[56px] leading-tight sm:leading-snug lg:leading-[85px] text-start  lg:text-left">
+                      
+                            <span>Improving Employee</span>
+                            
                         <span className="bg-text-gradient bg-clip-text text-transparent">Well-being</span>
                     </h1>
 
-                    <p className="font-normal text-base sm:text-lg leading-relaxed lg:leading-[28px] mb-3 text-center lg:text-left">
+                    <p className="font-normal text-[14px] sm:text-lg leading-[20px] lg:leading-[28px] mb-3 text-start pr-12 sm:pr-0 lg:text-left">
                         iMe&apos;s platform integrates seamlessly into daily work routines, delivering real-time well-being insights and personalized activities that foster healthy
                         habits, reduce stress, and enhance productivity. By cultivating a well-being-focused workplace, iMe supports individual well-being while helping
                         organizations meet their sustainability goals.
                     </p>
 
                     <form onSubmit={handleSubmit(onSubmit)}
-                        className="w-full max-w-[27rem] mx-auto lg:mx-0 p-2.5 pl-4 sm:pl-6 
-                                   flex flex-row sm:flex-row gap-3 sm:gap-0 
+                        className="hidden sm:flex w-full max-w-[27rem] mx-auto lg:mx-0 p-2.5 pl-4 sm:pl-6 
+                                   flex-row sm:flex-row gap-3 sm:gap-0 
                                    border border-[#E1E1E1] justify-between items-center 
                                    rounded-[1.25rem]">
                         <input

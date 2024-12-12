@@ -4,25 +4,25 @@ import { GoArrowRight } from 'react-icons/go';
 
 const EmployeGamificationSection = () => {
     return (
-        <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-8 md:px-8 lg:px-24">
+        <div className="w-full max-w-[1440px] mx-auto mt-4 px-6 sm:px-8 md:px-8 lg:px-24">
             <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8 lg:gap-20 pt-10 sm:pt-16 lg:pt-20">
-                <div className="w-full lg:w-1/2 flex flex-col gap-8 lg:gap-10">
+                <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:gap-10">
                     <h1 className="text-3xl sm:text-4xl lg:text-[48px] font-semibold leading-tight sm:leading-snug lg:leading-[50px]">
                         Gamification & <br /> Incentivization
                     </h1>
                     
                     <div className="flex flex-col gap-6">
-                        <p className="font-medium text-base sm:text-lg lg:text-xl leading-relaxed lg:leading-[33px] w-full lg:w-5/6 font-satoshi opacity-50">
+                        <p className="font-medium text-base sm:text-lg lg:text-xl leading-relaxed lg:leading-[33px] w-full lg:w-5/6 font-satoshi opacity-50 pr-16 sm:pr-0 lg:pr-0">
                             Gamification can make well-being goals more exciting, fun and inspiring for employees. iMe&apos;s well-being strategy fosters employee engagement through
                             leaderboards, challenges, streaks, and rewards.
                         </p>
 
                         {/* Mobile Read More Button */}
-                        <button
+                        {/* <button
                             className="md:hidden font-notoSans font-semibold w-36 h-11 text-sm flex gap-2 justify-center items-center rounded-lg text-white bg-[#BC1F74] hover:bg-[#a41861] transition-colors self-start"
                         >
                             Read More <GoArrowRight className="w-5 h-5" />
-                        </button>
+                        </button> */}
                     </div>
                 </div>
 

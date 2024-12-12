@@ -11,27 +11,35 @@ const VideoSection = () => {
     return (
         <div className="w-full max-w-[1440px] h-auto mx-auto mt-12 sm:mt-20 lg:mt-32 px-4 sm:px-8 md:px-12 lg:px-24">
             {/* Video Container */}
-            <div className="w-full aspect-video max-h-[600px] p-2 mx-auto rounded-xl shadow-customBoxShadow bg-white">
+            <div className="w-full aspect-[16/10] max-h-[1000px] p-2 mx-auto rounded-xl shadow-customBoxShadow bg-white">
                 <div className="video-wrapper relative w-full h-full rounded-lg overflow-hidden">
                     {/* Thumbnail Image */}
                     {!showVideo && (
                         <div className="relative w-full h-full">
                             <Image
-                                src="/Images/video-poster.webp"
+                                src="/Images/video.png"
                                 alt="Custom Poster"
                                 fill
                                 priority
-                                className="absolute inset-0 w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform duration-300"
+                                className="absolute inset-0 w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform duration-300 shadow-lg shadow-gray-400/50 brightness-[0.8]"
                                 onClick={handlePlayVideo}
                             />
-                            {/* Optional Play Button Overlay */}
+                            {/* Dark Overlay */}
+                            <div className="absolute inset-0 bg-black/30"></div>
+                            
+                            {/* Play Button Overlay */}
                             <div 
                                 className="absolute inset-0 flex items-center justify-center cursor-pointer"
                                 onClick={handlePlayVideo}
                             >
-                                <div className="w-16 h-16 sm:w-20 sm:h-20 bg-white/80 rounded-full flex items-center justify-center hover:bg-white transition-colors duration-300">
-                                    <div className="w-0 h-0 border-t-[10px] sm:border-t-[12px] border-t-transparent border-b-[10px] sm:border-b-[12px] border-b-transparent border-l-[20px] sm:border-l-[24px] border-[#BC1F74] ml-1">
-                                    </div>
+                                <div className="w-14 h-14 sm:w-20 sm:h-20 bg-white rounded-lg flex items-center justify-center hover:bg-white transition-colors duration-300">
+                                    <Image 
+                                        src="/Images/play-button.svg"
+                                        alt="Play Button"
+                                        width={24}
+                                        height={24}
+                                        className="w-6 h-6 sm:w-8 sm:h-8"
+                                    />
                                 </div>
                             </div>
                         </div>

@@ -5,7 +5,7 @@ import { GoArrowRight } from 'react-icons/go';
 const EmployeProductivitySection = () => {
     return (
         <div className="w-full max-w-[1440px] mx-auto px-6 sm:px-8 md:px-8 lg:px-24">
-            <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-20 pt-10 sm:pt-16 lg:pt-20">
+            <div className="flex flex-col-reverse lg:flex-row justify-between gap-8 lg:gap-20 pt-10 sm:pt-16 lg:pt-20">
                 <div className="w-3/6 lg:w-3/6 flex items-center justify-center lg:justify-start">
                     <div className="flex items-center">
                         <Image
@@ -33,23 +33,23 @@ const EmployeProductivitySection = () => {
                     </div>
                 </div>
 
-                <div className="w-full lg:w-1/2 flex flex-col gap-8 lg:gap-10 lg:pt-32">
+                <div className="w-full lg:w-1/2 flex flex-col gap-6 lg:gap-10 lg:pt-32">
                     <h1 className="text-3xl sm:text-4xl lg:text-[48px] font-semibold leading-tight sm:leading-snug lg:leading-[50px]">
-                        Boosted <br /> Productivity
+                        Boosted <br className="hidden sm:block" /> Productivity
                     </h1>
                     
                     <div className="flex flex-col gap-6">
-                        <p className="font-medium text-base sm:text-lg lg:text-xl leading-relaxed lg:leading-[33px] w-full lg:w-5/6 font-satoshi opacity-50">
+                        <p className="font-medium text-base sm:text-lg lg:text-xl leading-relaxed lg:leading-[33px] w-full lg:w-5/6 font-satoshi opacity-50 pr-16 sm:pr-0 lg:pr-0">
                             iMe&apos;s AI solution improves employee productivity by reducing stress and increasing engagement. Personalized healthy activities aligned with job demands
                             increase worker motivation and efficiency, resulting in a more fulfilling and profitable workday.
                         </p>
 
                         {/* Mobile Read More Button */}
-                        <button
+                        {/* <button
                             className="md:hidden font-notoSans font-semibold w-36 h-11 text-sm flex gap-2 justify-center items-center rounded-lg text-white bg-[#BC1F74] hover:bg-[#a41861] transition-colors self-start"
                         >
                             Read More <GoArrowRight className="w-5 h-5" />
-                        </button>
+                        </button> */}
                     </div>
                 </div>
             </div>

@@ -23,22 +23,32 @@ const EmployerHeroSection = () => {
         <div className="w-full px-4 sm:px-6 md:px-16 lg:px-24 h-auto flex flex-col lg:flex-row justify-between py-2  relative">
             <div className="w-full lg:w-6/12 h-auto flex justify-start lg:justify-end gap-6 lg:pr-10 pt-6 lg:pt-24 mb-8 lg:mb-0">
                 <div className="flex flex-col gap-4">
-                <h1 className="flex flex-col text-center md:text-start font-clash-display font-semibold text-4xl sm:text-5xl md:text-6xl lg:text-[60px] leading-tight lg:leading-[85px]">
-                        Employer&apos;s
-                        <span className="bg-text-gradient bg-clip-text text-transparent md:block lg:inline">
-                            Super{' '}
-                            <span className="block md:inline">
+                    <h1 className="flex flex-col text-start md:text-start font-clash-display font-semibold text-3xl sm:text-5xl md:text-6xl lg:text-[60px] leading-tight lg:leading-[85px]">
+                        {/* Mobile View: "Employer's Super" and "Dashboard" */}
+                        <div className="flex flex-col md:hidden">
+                            <span>Employer&apos;s 
+                                <span className="bg-text-gradient bg-clip-text text-transparent">{" "}Super</span>
+                            </span>
+                            <span className="bg-text-gradient bg-clip-text text-transparent">
                                 Dashboard
                             </span>
-                        </span>
+                        </div>
+
+                        {/* Desktop View: "Employer's" and "Super Dashboard" */}
+                        <div className="hidden md:flex md:flex-col">
+                            <span>Employer&apos;s</span>
+                            <span>
+                                Super <span className="bg-text-gradient bg-clip-text text-transparent">Dashboard</span>
+                            </span>
+                        </div>
                     </h1>
 
-                    <p className="font-normal text-sm sm:text-base lg:text-xl leading-relaxed lg:leading-[28px]  mb-3 text-center md:text-justify">
+                    <p className="font-normal text-sm sm:text-base lg:text-xl leading-relaxed lg:leading-[28px]  mb-3 text-start sm:text-center pr-20 sm:pr-0 md:text-justify">
                         iMe equips HR teams with real-time, AI-driven insights to identify stress and employee risks early, reducing turnover and absenteeism. With proactive
                         notifications for at-risk employees, HRs can quickly provide necessary support. Additionally, iMe fosters healthy competition through well-being challenges
                         and rewards, promoting a motivated workplace culture that enhances overall productivity.
                     </p>
-                    <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-[27rem] pl-3 sm:pl-6 p-2.5 flex flex-row sm:flex-row border border-[#E1E1E1] justify-between items-center rounded-[1.25rem] gap-3 sm:gap-0">
+                    <form onSubmit={handleSubmit(onSubmit)} className="hidden sm:flex w-full max-w-[27rem] pl-3 sm:pl-6 p-2.5 flex-row sm:flex-row border border-[#E1E1E1] justify-between items-center rounded-[1.25rem] gap-3 sm:gap-0">
                         <input
                             {...register('email', { required: true })}
                             type="text"

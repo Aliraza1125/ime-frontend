@@ -41,7 +41,7 @@ export const GeneralLayout = ({ children }) => {
             <div className="w-full h-full py-16 bg-theme-gradient">
                 <div className="w-full min-h-screen h-full bg-white rounded-[60px] sm:rounded-[60px] md:rounded-[60px] lg:rounded-[75px] xl:rounded-[100px]">
                     <Header />
-                    <MobileNavButton />
+                    {/* <MobileNavButton /> */}
                     {children}
                     <Footer />
                 </div>

@@ -12,17 +12,17 @@ const EmployerESGSection = () => {
                         ESG/CSRD <br className="hidden sm:block" />
                         Alignment
                     </h1>
-                    <p className="font-medium text-base sm:text-lg lg:text-lg leading-relaxed lg:leading-[33px] w-full font-satoshi opacity-50">
+                    <p className="font-medium text-base sm:text-lg lg:text-lg leading-relaxed lg:leading-[33px] w-full font-satoshi opacity-50 pr-8 sm:pr-0     ">
                         iMe actively promotes staff well-being and burnout reduction, in line with business sustainability efforts and meeting ESG standards and CSRD. By promoting
                         a healthy, balanced workplace, the platform assists firms in demonstrating a commitment to social responsibility and long-term employee care.
                     </p>
 
                     {/* Mobile Read More Button */}
-                    <button
+                    {/* <button
                         className="md:hidden text-center font-notoSans font-semibold w-36 h-11 text-sm flex gap-2 justify-center items-center rounded-lg text-white bg-[#BC1F74] hover:bg-[#a41861] transition-colors"
                     >
                         Read More <GoArrowRight className="w-5 h-5" />
-                    </button>
+                    </button> */}
                 </div>
 
                 {/* Image Container */}

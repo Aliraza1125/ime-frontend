@@ -30,7 +30,7 @@ const Footer = () => {
     };
 
     return (
-        <>
+        <footer className="footer">
             {/* Upper Footer Section */}
             <div className="w-full relative z-10 py-4 md:py-6 lg:py-8 flex flex-col items-center border-b border-[rgba(0,0,0,0.2)]">
                 <div className="w-full px-4 sm:px-6 md:px-12 lg:px-32 flex flex-col-reverse md:flex-row justify-between items-center relative gap-6 md:gap-0">
@@ -52,22 +52,13 @@ const Footer = () => {
                         <Image
                             src="/Images/Logo.svg"
                             alt="GFG logo"
-                            width={100}
-                            height={100}
-                            className="w-24 sm:w-28 lg:w-[8.5rem] h-auto"
+                            width={150}
+                            height={150}
+                            className="w-32 sm:w-36 lg:w-[10rem] h-auto"
                         />
                     </Link>
 
-                    {/* Back to Top Button
-                    <div
-                        onClick={scrollToTop}
-                        className="fixed bottom-4 right-4 md:absolute md:bottom-28 md:right-8 lg:right-32 flex justify-center items-center gap-2 md:gap-4 cursor-pointer z-50"
-                    >
-                        <p className="text-[#454552] text-sm md:text-base">Back-top</p>
-                        <div className="h-8 w-8 md:h-9 md:w-9 rounded-full bg-[#B0208C] flex justify-center items-center text-white">
-                            <FaAngleDoubleUp />
-                        </div>
-                    </div> */}
+                 
                 </div>
             </div>
 
@@ -129,7 +120,7 @@ const Footer = () => {
                     </Link>
                 </div>
             </div>
-        </>
+        </footer>
     );
 };
 

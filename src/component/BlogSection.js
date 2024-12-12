@@ -48,17 +48,17 @@ const BlogSection = () => {
     ];
 
     return (
-        <div className="w-full max-w-[1440px] mx-auto mt-12 sm:mt-20 lg:mt-32 px-4 sm:px-8 md:px-12 lg:px-24">
+        <div className="w-full max-w-[1440px] mx-auto mt-12 sm:mt-20 lg:mt-32 px-4 sm:px-8 md:px-12 lg:px-24 bg-[#F8F9FA] py-12">
             <div className="w-full mx-auto">
                 {/* Header Section */}
-                <div className="flex flex-col items-center ">
-                    <span className="uppercase text-center rounded-lg shadow-lg text-xs sm:text-sm mb-4 px-4 py-2 font-lato">
+                <div className="flex flex-col items-start sm:items-center ">
+                    <span className="uppercase text-start sm:text-center rounded-lg shadow-lg text-xs sm:text-sm mb-4 px-4 py-2 font-lato">
                         Latest Blogs
                     </span>
                     <h1 className="text-center font-semibold text-3xl sm:text-4xl lg:text-[48px] leading-tight lg:leading-[48px] mb-4">
                         Learn & Grow
                     </h1>
-                    <p className="text-center font-normal text-base sm:text-lg lg:text-[20px] leading-relaxed lg:leading-[30px] font-lato max-w-5xl">
+                    <p className="text-start sm:text-center font-normal text-base sm:text-lg lg:text-[20px] leading-relaxed lg:leading-[30px] font-lato max-w-5xl">
                         From compliance tips to well-being strategies, our blog is your go-to resource for workplace wellness insights.
                     </p>
                 </div>

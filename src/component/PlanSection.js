@@ -28,10 +28,10 @@ const PlanSection = () => {
         <div className="w-full max-w-[1440px] h-auto mx-auto mt-40 sm:mt-20 lg:mt-32 px-4 sm:px-6 lg:px-8 ">
             <div className="w-full mx-auto">
                 {/* Header Section */}
-                <h1 className="flex flex-col md:flex-row md:gap-2 md:justify-center text-center font-semibold text-4xl sm:text-4xl lg:text-[48px] leading-tight lg:leading-[59.04px] text-[#0D0C46]">
+                <h1 className="flex flex-col md:flex-row md:gap-2 md:justify-center text-start font-semibold text-3xl sm:text-4xl lg:text-[48px] leading-tight lg:leading-[59.04px] text-[#0D0C46]">
                     Unlock the Full <span>Potential of iMe</span>
                 </h1>
-                <p className="text-center font-normal text-base sm:text-lg lg:text-[20px] leading-relaxed lg:leading-[30px] font-lato mt-3 lg:mt-4 max-w-[76rem] mx-auto px-4">
+                <p className="text-start sm:text-center font-normal text-base sm:text-lg lg:text-[20px] leading-relaxed lg:leading-[30px] font-lato mt-3 lg:mt-4 max-w-[76rem] mx-auto pr-16 sm:pr-0">
                     Take the next step in corporate well-being by unlocking all of iMe&apos;s powerful features! Explore the realm of tailored support, insights, and result driven
                     resources crafted to enhance your team&apos;s well-being. Experience how AI driven well-being journeys can boost productivity and ignite engagement.
                 </p>
@@ -54,7 +54,7 @@ const PlanSection = () => {
 
                         <div className="flex flex-col mt-4">
                             <PlanFeature icon="/Images/standarPlanTick.svg" text="200-10,000 Employees" />
-                            <PlanFeature icon="/Images/standarPlanTick.svg" text="£10,000 Integration Fee" />
+                            <PlanFeature icon="/Images/standarPlanTick.svg" text="£10,000 Integration " />
                             <PlanFeature icon="/Images/standarPlanTick.svg" text="£4.99 /employee/month" isPrice={true} priceColor="text-[#B0208C]" isBold={true} />
                         </div>
 
@@ -66,14 +66,14 @@ const PlanSection = () => {
                         </button>
 
                         <div className="relative flex justify-center -bottom-2">
-                            <p className="bg-[#F1F1F1] text-xs sm:text-[15px] border border-[#1E1E1E]/20 rounded-[10px] w-[100%] sm:w-[355px] py-2 px-1 text-center cursor-pointer hover:bg-[#ddd4d4]">
+                            <p className="bg-[#F1F1F1] text-xs sm:text-[15px] border border-[#1E1E1E]/20 rounded-[20px] w-[120%] sm:w-[355px] py-2 px-1 text-center cursor-pointer hover:bg-[#ddd4d4]">
                                 Additional customizations available.
                             </p>
                         </div>
                     </div>
 
                     {/* Limited Time Offer */}
-                    <div className="relative bg-theme-gradient w-full max-w-[324px] rounded-2xl p-4 sm:p-6 flex flex-col">
+                    {/* <div className="relative bg-theme-gradient w-full max-w-[324px] rounded-2xl p-4 sm:p-6 flex flex-col">
                         <div className="absolute -top-5 left-1/2 -translate-x-1/2 bg-white border border-[#1E1E1E]/20 rounded-lg py-2 px-4 sm:px-6">
                             <h2 className="text-xl sm:text-2xl lg:text-[30px] font-semibold leading-tight text-center bg-theme-gradient bg-clip-text text-transparent w-[195px]">
                                 Limited Time Offer
@@ -126,7 +126,7 @@ const PlanSection = () => {
                         >
                             ENQUIRE NOW <GoArrowRight className="w-5 h-5" />
                         </button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
