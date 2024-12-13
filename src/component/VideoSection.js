@@ -11,21 +11,19 @@ const VideoSection = () => {
     return (
         <div className="w-full max-w-[1440px] h-auto mx-auto mt-12 sm:mt-20 lg:mt-32 px-4 sm:px-8 md:px-12 lg:px-24">
             {/* Video Container */}
-            <div className="w-full aspect-[16/10] max-h-[1000px] p-2 mx-auto rounded-xl shadow-customBoxShadow bg-white">
+            <div className="w-full aspect-[16/10] max-h-[600px] p-2 mx-auto rounded-xl shadow-customBoxShadow bg-white">
                 <div className="video-wrapper relative w-full h-full rounded-lg overflow-hidden">
                     {/* Thumbnail Image */}
                     {!showVideo && (
                         <div className="relative w-full h-full">
-                            <Image
-                                src="/Images/video.png"
-                                alt="Custom Poster"
-                                fill
-                                priority
-                                className="absolute inset-0 w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform duration-300 shadow-lg shadow-gray-400/50 brightness-[0.8]"
-                                onClick={handlePlayVideo}
-                            />
+                             <img
+                            src="/Images/video-poster.webp"
+                            alt="Custom Poster"
+                            className="absolute inset-0 w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform duration-300"
+                            onClick={handlePlayVideo}
+                        />
                             {/* Dark Overlay */}
-                            <div className="absolute inset-0 bg-black/30"></div>
+                            
                             
                             {/* Play Button Overlay */}
                             <div 

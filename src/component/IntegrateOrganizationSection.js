@@ -41,7 +41,7 @@ const IntegrateOrganizationSection = () => {
                                 width={0}
                                 height={0}
                                 sizes="(max-width: 768px) 100vw, 768px"
-                                className="hidden md:block w-full h-auto md:w-[48rem] md:h-[48rem] scale-100 md:scale-125 relative 
+                                className="hidden md:block w-full h-auto md:w-[44rem] md:h-[44rem] scale-100 md:scale-110 relative 
                                     md:-bottom-20 md:-right-9 transform-gpu object-contain"
                                 quality={100}
                             />

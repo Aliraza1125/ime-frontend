@@ -38,7 +38,7 @@ const EmployerOrganizationSection = () => {
                         width={0}
                         height={0}
                         sizes="100%"
-                        className="w-[90%] sm:w-[85%] lg:w-[45rem] h-auto lg:h-[24rem] lg:absolute"
+                        className="w-[90%] sm:w-[85%] lg:w-[30rem] h-auto lg:h-[20rem] lg:absolute"
                         priority
                         quality={100}
                     />
@@ -48,7 +48,7 @@ const EmployerOrganizationSection = () => {
                         width={0}
                         height={0}
                         sizes="100%"
-                        className="w-[8rem] sm:w-[9rem] lg:w-[12rem] h-auto absolute -bottom-10 sm:-bottom-12 lg:-bottom-14 -left-3 lg:-left-10 z-10"
+                        className="w-[8rem] sm:w-[9rem] lg:w-[10rem] h-auto absolute -bottom-10 sm:-bottom-12 lg:-bottom-14 -left-3 lg:-left-8 z-10"
                         priority
                         quality={100}
                     />
@@ -58,11 +58,12 @@ const EmployerOrganizationSection = () => {
                         width={0}
                         height={0}
                         sizes="100%"
-                        className="w-[10rem] sm:w-[11rem] lg:w-[18rem] h-auto absolute -top-6 lg:-top-12 -right-2 lg:right-[-20px] z-10"
+                        className="w-[10rem] sm:w-[11rem] lg:w-[15rem] h-auto absolute -top-6 lg:-top-10 -right-2 lg:right-[-16px] z-10"
                         priority
                         quality={100}
                     />
                 </div>
+
             </div>
         </div>
     );

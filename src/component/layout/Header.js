@@ -39,13 +39,13 @@ const Header = () => {
     const options = [
         {
             id: 1,
-            label: 'For Employer',
+            label: 'Employer Dashboard',
             value: 'Employer',
             action: () => router.push('/solution/employer'),
         },
         {
             id: 2,
-            label: 'For Employee',
+            label: 'Employee Well-being',
             value: 'Employee',
             action: () => router.push('/solution/employee'),
         },

@@ -36,11 +36,13 @@ const EmployerHeroSection = () => {
 
                         {/* Desktop View: "Employer's" and "Super Dashboard" */}
                         <div className="hidden md:flex md:flex-col">
-                            <span>Employer&apos;s</span>
-                            <span>
-                                Super <span className="bg-text-gradient bg-clip-text text-transparent">Dashboard</span>
-                            </span>
-                        </div>
+    <span>Employer&apos;s</span>
+    <span>
+        <span className="bg-text-gradient bg-clip-text text-transparent">Super</span>{' '}
+        <span className="bg-text-gradient bg-clip-text text-transparent">Dashboard</span>
+    </span>
+</div>
+
                     </h1>
 
                     <p className="font-normal text-sm sm:text-base lg:text-xl leading-relaxed lg:leading-[28px]  mb-3 text-start sm:text-center pr-20 sm:pr-0 md:text-justify">

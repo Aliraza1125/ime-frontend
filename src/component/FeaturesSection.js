@@ -58,7 +58,7 @@ const FeaturesSection = () => {
                         <div className="w-full max-w-full overflow-hidden">
                             {/* Desktop Image */}
                             <Image
-                                src="/Images/employerFeature.svg"
+                                src="/Images/employerFeature.png"
                                 alt="employerFeature"
                                 width={1000}
                                 height={800}
@@ -85,7 +85,7 @@ const FeaturesSection = () => {
                         <div className="w-full relative">
                             {/* Desktop Image */}
                             <Image
-                                src="/Images/employeeFeature.svg"
+                                src="/Images/employeeFeature.png"
                                 alt="employeeFeature"
                                 width={1000}
                                 height={1000}
