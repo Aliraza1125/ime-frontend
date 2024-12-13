@@ -98,7 +98,7 @@ const FeaturesSection = () => {
                                 alt="employeeFeature Mobile"
                                 width={1000}
                                 height={800}
-                                className="block md:hidden w-full h-auto object-contain scale-100 hover:scale-105 transition-transform duration-300"
+                                className="block md:hidden w-full h-auto object-contain scale-100 hover:scale-105 transition-transform duration-300 mt-8"
                                 priority
                             />
                         </div>

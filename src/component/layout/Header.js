@@ -16,7 +16,7 @@ const Header = () => {
     const solutionOptions = [
         {
             id: 1,
-            label: 'FOR EMPLOYER',
+            label: 'Employer Dashboard',
             value: 'Employer',
             action: () => {
                 router.push('/solution/employer');
@@ -26,7 +26,7 @@ const Header = () => {
         },
         {
             id: 2,
-            label: 'FOR EMPLOYEE',
+            label: 'Employee Well-being',
             value: 'Employee',
             action: () => {
                 router.push('/solution/employee');
